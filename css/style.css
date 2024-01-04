@@ -20,7 +20,7 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1480px;
+    max-width: 1440px;
     padding: 0 25px;
     box-sizing: border-box;
 }
@@ -88,6 +88,10 @@ ul {
 
 nav {
     padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 2px 2px rgb(177, 175, 175);
 }
 
 
@@ -169,6 +173,24 @@ nav a:hover {
     color: white;
     opacity: 0.9;
 }
+
+.bouton-mobile {
+    visibility: hidden;
+    width: 134px;
+    height:52px;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+    justify-content: center;
+}
+
+.bouton-mobile .fa-solid {
+    color: white;
+}
+
+
 
 
 /* Filtres */
@@ -297,6 +319,12 @@ nav a:hover {
 }
 .les-hebergements p {
     width: 100%;
+    margin-top: 0;
+}
+
+.afficher-plus h2 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
@@ -454,10 +482,75 @@ nav a:hover {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+
 }
+/* Ajout perso. */
+
+
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+    /* général */
+    .main-container{
+        padding: 10px;
+    }
+    /* header */
+    header {
+       
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    header a {
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav { 
+       padding: 0;
+    }
+    .logoBooki{
+        margin: 20px 0 10px 0;
+    }
+
+    nav a:hover {
+        border: none;
+        padding-top: 0px;
+    }
+    nav li:hover {
+        color: #0065FC;
+        border-bottom: solid #0065FC 2px;
+        
+    }
+    header li {
+        
+        border-bottom: solid rgb(238, 238, 238) 2px;
+        padding-bottom: 15px;
+        width: 50%;
+        
+    }
+    .menu {
+        gap: 0;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+/* search parti */
+
+    .search-icon {
+        min-width: 50px;
+        max-width: 50px;
+    }
+
+    .search-button {
+        display: none;
+    }
+    .bouton-mobile {
+        
+        visibility: visible;
+    }
 }
+
 
