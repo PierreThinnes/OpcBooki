@@ -34,6 +34,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    padding: 12px;
 }
 
 .card {
@@ -143,8 +144,6 @@ nav a:hover {
 .search {
     display: flex;
     margin-top: 18px;
-    justify-content: flex-start;
-    align-items: center;
     margin-bottom: 18px;
     
 }
@@ -172,9 +171,11 @@ nav a:hover {
     font-weight: 700;
     font-size: 18px;
     width: 198px;
-    height: 48px;
-    
+    height: 48px;  
 }
+input::placeholder {
+    color:black;
+  }
 
 .search-button input {
     display: block;
@@ -204,9 +205,6 @@ nav a:hover {
    font-size: 18px;
 }
 
-
-
-
 /* Filtres */
 
 .box-filtre h2 {
@@ -231,7 +229,7 @@ nav a:hover {
     height: 45px;
     padding-left: 0;
     margin-top: 25px;
-    gap: 15px;
+    gap: 10px;
 }
 
 .box-filtre {
@@ -251,7 +249,7 @@ nav a:hover {
     align-items: center;
     gap:17px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     padding: 6px 15px;
 }
 
@@ -270,12 +268,26 @@ nav a:hover {
     gap: 15px;
     align-items: center;
     padding-left: 10px;
+    margin-bottom: 10px;
     
 }
 
 .information p {
     font-size: 16px;
     font-weight: 400;
+}
+
+.fa-info {
+        border: solid;
+        border-radius: 17px;
+        border-color:#D9D9D9;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        min-width: 24px;
+        height: 24px;
+        border-width: 2px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -304,11 +316,12 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 15px;
+    margin-left: 12px;
 }
 
 .partie-hebergements figure {
     width: 31%;
-    height: 250px;
+    height: 235px;
     display: flex;
     margin : 0 0 0 0;
     flex-wrap: wrap;
@@ -316,7 +329,7 @@ nav a:hover {
 
 .partie-hebergements h3 {
     margin-top:0px ;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     width: 100%;
 }
 
@@ -364,6 +377,7 @@ nav a:hover {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    margin-left: 10px;
 }
 
 .populaires-cards img {
@@ -420,8 +434,6 @@ nav a:hover {
 }
 
 .activites .card {
-    display: flex;
-    flex-direction: column;
     width: 23%;
     padding: 0;
 }
@@ -432,10 +444,10 @@ nav a:hover {
     white-space: nowrap;
 }
 
-.activites h2{
-    margin: 0;
-    text-align:start ;
-    padding: 5px 12px;
+.activites h2{display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    padding-left: 20px;
 }
 
 /* footer */
@@ -450,7 +462,7 @@ nav a:hover {
 
 .footer-list {
     width : 33%;
-    padding: 20px;
+    padding: 28px;
     
 }
 
@@ -607,7 +619,8 @@ nav a:hover {
     max-width: 410px;
     }
     .filtre {
-        min-width: 155px;
+        gap: 11px;
+        width: 35%;
         height: 35px;
     }
     .box-filtre h2 {
@@ -644,8 +657,13 @@ nav a:hover {
 
 }
 
+.les-hebergements img {
+    object-position: 50% 70%;
+}
+
 .les-hebergements {
     flex-direction: column;
+    margin-left: 0px;
 }
 .partie-hebergements figure
 {
@@ -675,13 +693,17 @@ nav a:hover {
     width: 90%;
 }
 
+.activites .notredame {
+    object-position: 50% 10% ;
+}
+
 /* footer */
 .section-footer{
     flex-direction: column;
 }
 .footer-list{
     width: 100%;
-    padding: 20px;
+    padding: 20px 0 30px 30px;
 }
 .activites img {
     height: 150px;
