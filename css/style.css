@@ -120,7 +120,6 @@ header {
     justify-content: space-between;
 }
 .logoBooki {    
-    align-self: flex-start;
     height: 20px;
     margin: 30px 0px 30px 0px;
 }
@@ -209,8 +208,7 @@ input::placeholder {
 
 .box-filtre h2 {
     display: flex;
-    margin: 10px 15px 3px 10px;
-    align-items: center;
+    margin: 10px 15px 3px 0px;
     font-size: 18px;
 }
 
@@ -267,8 +265,8 @@ input::placeholder {
     display: flex;
     gap: 15px;
     align-items: center;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    
+    margin-bottom: 15px;
     
 }
 
@@ -319,9 +317,9 @@ input::placeholder {
     margin-left: 12px;
 }
 
-.partie-hebergements figure {
+.partie-hebergements a {
     width: 31%;
-    height: 235px;
+    height: 205px;
     display: flex;
     margin : 0 0 0 0;
     flex-wrap: wrap;
@@ -339,7 +337,7 @@ input::placeholder {
 
 .les-hebergements img {
     width: 100%;
-    height: 150px;
+    height: 120px;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 
@@ -348,6 +346,8 @@ input::placeholder {
 .les-hebergements figcaption {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 4px;
 }
 .les-hebergements p {
     width: 100%;
@@ -355,8 +355,11 @@ input::placeholder {
 }
 
 .afficher-plus h2 {
-    margin-top: 15px;
-    margin-bottom: 0;
+    margin : 5px 0
+}
+
+.les-hebergements figure {
+    margin: 0;
 }
 
 
@@ -368,6 +371,11 @@ input::placeholder {
     background-color: #F2F2F2
 }
 
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -376,7 +384,7 @@ input::placeholder {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 12px;
     margin-left: 10px;
 }
 
@@ -431,6 +439,7 @@ input::placeholder {
 .activites {
     display: flex;
     flex-direction: column;
+    padding: 30px;
 }
 
 .activites .card {
@@ -440,7 +449,6 @@ input::placeholder {
 
 .activites h3 {
     margin-top: 0;
-    padding-left:15px ;
     white-space: nowrap;
 }
 
@@ -503,7 +511,7 @@ input::placeholder {
 
     .hebergements-and-populaires {
         flex-direction: column;
-        gap: 20px;
+        gap: 50px;
     }
 
     .partie-hebergements {
@@ -517,7 +525,12 @@ input::placeholder {
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .populaires-cards .card {
+        width: 98%;
+        margin-left: 0;
     }
 
     .populaires-cards a {
@@ -630,6 +643,7 @@ input::placeholder {
 /* information */
 
 .information {
+    margin-left:15px;
     margin-bottom: 15px;
 }
 
@@ -654,7 +668,10 @@ input::placeholder {
 
 .partie-hebergements {
     width: 100%;
+}
 
+.partie-hebergements a {
+    width: 100%;
 }
 
 .les-hebergements img {
@@ -662,13 +679,12 @@ input::placeholder {
 }
 
 .les-hebergements {
-    flex-direction: column;
     margin-left: 0px;
 }
 .partie-hebergements figure
 {
     display: block;
-    width: 98%;
+    width: 100%;
 }
 /* populaires */
 
@@ -682,15 +698,22 @@ input::placeholder {
     width: 100%;
 }
 /* activite */
+.activites{
+    padding: 15px;
+}
+
+.activites h3 {
+    padding: 0;
+}
 
 .les-activites{
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    
 }
+
 .activites .card{
-    width: 90%;
+    width: 100%;
 }
 
 .activites .notredame {
