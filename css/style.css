@@ -629,7 +629,6 @@ input::placeholder {
     flex-wrap: wrap;
     height:auto;
     gap: 18px;
-    max-width: 410px;
     }
     .filtre {
         gap: 11px;
